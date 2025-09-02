@@ -7,7 +7,7 @@ library(readxl)
 library(stringr)
 
 # Convert from string to values for cancer vs no cancer
-merged_data_114 <- read_excel("~/Desktop/Lung_Cancer_Plasma_Data_Melissa_Yaici/merged_data_114.xlsx")
+merged_data_114 <- read_excel("merged_data_114.xlsx")
 merged_data_114 <- merged_data_114 %>%
   mutate(
     Primary.LC = case_when(
